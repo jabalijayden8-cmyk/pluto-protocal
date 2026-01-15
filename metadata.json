@@ -1,0 +1,7 @@
+{
+  "name": "Pluto Protocol",
+  "description": "The institutional-grade cryptocurrency terminal. Aggregating global liquidity with integrated Web3 settlement and creator-led asset management.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
