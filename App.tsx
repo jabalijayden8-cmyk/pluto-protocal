@@ -1,5 +1,6 @@
 
 import React, { useState, useEffect, useCallback } from 'react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import { UserProfile, UserRole, AuthMethod } from './types';
 import { INITIAL_USER_STATE, INITIAL_CREATOR_STATE } from './constants';
 import LandingPage from './components/LandingPage';
@@ -283,6 +284,7 @@ const App: React.FC = () => {
 
   return (
     <div className="min-h-screen flex flex-col bg-[#030712] text-white selection:bg-indigo-500 selection:text-white relative">
+      <SpeedInsights />
       {isGlobalWalletSelectorOpen && (
         <WalletSelector onSelect={handleGlobalWalletSelect} onClose={() => setIsGlobalWalletSelectorOpen(false)} />
       )}
